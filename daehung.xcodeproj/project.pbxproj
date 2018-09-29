@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D0F1A60215B979600A23976 /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F1A5E215B979600A23976 /* LocationSearchViewController.swift */; };
+		6D0F1A61215B979600A23976 /* LocationSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D0F1A5F215B979600A23976 /* LocationSearchViewController.xib */; };
+		6D0F1A63215D0AD200A23976 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F1A62215D0AD200A23976 /* SearchViewController.swift */; };
+		6D0F1A66215E576800A23976 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F1A64215E576800A23976 /* SearchResultViewController.swift */; };
+		6D0F1A67215E576800A23976 /* SearchResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D0F1A65215E576800A23976 /* SearchResultViewController.xib */; };
+		6D188181215B2A4D006791E9 /* FindDistrictUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D188180215B2A4D006791E9 /* FindDistrictUtil.swift */; };
+		6D36D78B21590DC700F57487 /* BottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D36D78921590DC700F57487 /* BottomViewController.swift */; };
+		6D36D78C21590DC700F57487 /* BottomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D36D78A21590DC700F57487 /* BottomViewController.xib */; };
 		6D51F125214560C2009FB0E2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D51F122214560C2009FB0E2 /* MainViewController.swift */; };
 		6D51F126214560C2009FB0E2 /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D51F123214560C2009FB0E2 /* PresentedViewController.swift */; };
 		6D51F127214560C2009FB0E2 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D51F124214560C2009FB0E2 /* SideMenuTableViewController.swift */; };
@@ -58,6 +66,14 @@
 
 /* Begin PBXFileReference section */
 		5D223667DCFDA559E3D354DB /* Pods_daehung.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_daehung.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0F1A5E215B979600A23976 /* LocationSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewController.swift; sourceTree = "<group>"; };
+		6D0F1A5F215B979600A23976 /* LocationSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationSearchViewController.xib; sourceTree = "<group>"; };
+		6D0F1A62215D0AD200A23976 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		6D0F1A64215E576800A23976 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		6D0F1A65215E576800A23976 /* SearchResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultViewController.xib; sourceTree = "<group>"; };
+		6D188180215B2A4D006791E9 /* FindDistrictUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDistrictUtil.swift; sourceTree = "<group>"; };
+		6D36D78921590DC700F57487 /* BottomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomViewController.swift; sourceTree = "<group>"; };
+		6D36D78A21590DC700F57487 /* BottomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomViewController.xib; sourceTree = "<group>"; };
 		6D51F122214560C2009FB0E2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../../sidemenu/SideMenu/Example/MainViewController.swift; sourceTree = "<group>"; };
 		6D51F123214560C2009FB0E2 /* PresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresentedViewController.swift; path = ../../sidemenu/SideMenu/Example/PresentedViewController.swift; sourceTree = "<group>"; };
 		6D51F124214560C2009FB0E2 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuTableViewController.swift; path = ../../sidemenu/SideMenu/Example/SideMenuTableViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +106,7 @@
 		6D646ACA213A9C0A00A10152 /* map_pin_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin_shadow.png; sourceTree = "<group>"; };
 		6D646ACB213A9C0A00A10152 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
 		6D6C425F214CD34E006B608D /* st.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = st.json; path = ../../daehung_node/st.json; sourceTree = "<group>"; };
+		6D6C5B55215B1EC600DB41FF /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D9218BB213A927900A24F22 /* daehung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = daehung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D9218BE213A927900A24F22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D9218C3213A927900A24F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -237,6 +254,14 @@
 				6D9218C5213A927900A24F22 /* daehung.xcdatamodeld */,
 				6D921977213A94AA00A24F22 /* DaumMapHeadrBring.m */,
 				6D921976213A94A900A24F22 /* daehung-Bridging-Header.h */,
+				6D36D78921590DC700F57487 /* BottomViewController.swift */,
+				6D36D78A21590DC700F57487 /* BottomViewController.xib */,
+				6D188180215B2A4D006791E9 /* FindDistrictUtil.swift */,
+				6D0F1A5E215B979600A23976 /* LocationSearchViewController.swift */,
+				6D0F1A5F215B979600A23976 /* LocationSearchViewController.xib */,
+				6D0F1A62215D0AD200A23976 /* SearchViewController.swift */,
+				6D0F1A64215E576800A23976 /* SearchResultViewController.swift */,
+				6D0F1A65215E576800A23976 /* SearchResultViewController.xib */,
 			);
 			path = daehung;
 			sourceTree = "<group>";
@@ -244,6 +269,7 @@
 		6D921947213A932C00A24F22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D6C5B55215B1EC600DB41FF /* SwiftyJSON.framework */,
 				6D921957213A942100A24F22 /* DaumMap.embeddedframework */,
 				6D921954213A935300A24F22 /* libsqlite3.tbd */,
 				6D921952213A934D00A24F22 /* libxml2.tbd */,
@@ -321,6 +347,7 @@
 				6D9218B8213A927900A24F22 /* Frameworks */,
 				6D9218B9213A927900A24F22 /* Resources */,
 				FB2F6C58D3EFD0757CB2CA9C /* [CP] Embed Pods Frameworks */,
+				9DF3ECC0767A63313B56CFDE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -383,6 +410,7 @@
 				6D646ADB213A9C0A00A10152 /* info_box.png in Resources */,
 				6D646AD1213A9C0A00A10152 /* map_pin_custom@3x.png in Resources */,
 				6D6C4260214CD34E006B608D /* st.json in Resources */,
+				6D0F1A67215E576800A23976 /* SearchResultViewController.xib in Resources */,
 				6D646AE6213A9C0A00A10152 /* map_pin_shadow.png in Resources */,
 				6D646AD9213A9C0A00A10152 /* map_present_tracking.png in Resources */,
 				6D646AD0213A9C0A00A10152 /* detail_button.png in Resources */,
@@ -391,6 +419,7 @@
 				6D646ADE213A9C0A00A10152 /* info_box_tail.png in Resources */,
 				6D646ACD213A9C0A00A10152 /* map_pin_custom.png in Resources */,
 				6D646ADD213A9C0A00A10152 /* map_pinup_custom.png in Resources */,
+				6D0F1A61215B979600A23976 /* LocationSearchViewController.xib in Resources */,
 				6D646AD2213A9C0A00A10152 /* map_pinup@3x.png in Resources */,
 				6D646ADC213A9C0A00A10152 /* point_sprite.png in Resources */,
 				6D646AE4213A9C0A00A10152 /* map_present_background_update.png in Resources */,
@@ -399,6 +428,7 @@
 				6D646ACE213A9C0A00A10152 /* shadow_balloon.png in Resources */,
 				6D9218C9213A927A00A24F22 /* Assets.xcassets in Resources */,
 				6D9218C4213A927900A24F22 /* Main.storyboard in Resources */,
+				6D36D78C21590DC700F57487 /* BottomViewController.xib in Resources */,
 				6D646AE5213A9C0A00A10152 /* daum_th_line.png in Resources */,
 				6D646ACF213A9C0A00A10152 /* map_pinup.png in Resources */,
 			);
@@ -425,6 +455,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9DF3ECC0767A63313B56CFDE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-daehung/Pods-daehung-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-daehung/Pods-daehung-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FB2F6C58D3EFD0757CB2CA9C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -433,12 +483,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-daehung/Pods-daehung-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -452,11 +508,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D0F1A63215D0AD200A23976 /* SearchViewController.swift in Sources */,
+				6D36D78B21590DC700F57487 /* BottomViewController.swift in Sources */,
 				6D9218C7213A927900A24F22 /* daehung.xcdatamodeld in Sources */,
 				6D921978213A94AA00A24F22 /* DaumMapHeadrBring.m in Sources */,
 				6D9218BF213A927900A24F22 /* AppDelegate.swift in Sources */,
 				6D51F125214560C2009FB0E2 /* MainViewController.swift in Sources */,
 				6D51F126214560C2009FB0E2 /* PresentedViewController.swift in Sources */,
+				6D188181215B2A4D006791E9 /* FindDistrictUtil.swift in Sources */,
+				6D0F1A66215E576800A23976 /* SearchResultViewController.swift in Sources */,
+				6D0F1A60215B979600A23976 /* LocationSearchViewController.swift in Sources */,
 				6D51F127214560C2009FB0E2 /* SideMenuTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
