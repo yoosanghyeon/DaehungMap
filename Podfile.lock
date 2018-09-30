@@ -11,7 +11,14 @@ PODS:
   - GooglePlaces (2.7.0):
     - GoogleMaps/Base (= 2.7.0)
   - ObjectMapper (3.3.0)
+  - RxCocoa (4.3.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.3.1)
   - SideMenu (4.0.0)
+  - SwiftyEventBus/Core (0.2.0)
+  - SwiftyEventBus/Rx (0.2.0):
+    - RxSwift
+    - SwiftyEventBus/Core
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
@@ -19,8 +26,11 @@ DEPENDENCIES:
   - AlamofireObjectMapper (~> 5.0)
   - GoogleMaps
   - GooglePlaces
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
   - SideMenu (~> 4.0.0)
-  - SwiftyJSON (~> 4.0)
+  - SwiftyEventBus/Rx
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -29,7 +39,10 @@ SPEC REPOS:
     - GoogleMaps
     - GooglePlaces
     - ObjectMapper
+    - RxCocoa
+    - RxSwift
     - SideMenu
+    - SwiftyEventBus
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -38,9 +51,12 @@ SPEC CHECKSUMS:
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
   SideMenu: 70ee5657df63ec3382660ec4ef470bf1cf5db07d
+  SwiftyEventBus: 31949f74a26621ce12836447305aa4f7da732ee5
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 11c7e020e90e0613de8713ecfc51940c412c3b02
+PODFILE CHECKSUM: 8e59f89edd3cc30c5ad5850994575d8bb3425aa2
 
 COCOAPODS: 1.5.3

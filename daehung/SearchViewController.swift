@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftyJSON
+
 
 
 struct LocationSelectedCompelte {
@@ -189,7 +189,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
                         
                     }
                 } else {
-                    //we have error connection google api
+                    
                 }
             }
             task.resume()

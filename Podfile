@@ -10,6 +10,9 @@ target 'daehung' do
    pod 'AlamofireObjectMapper', '~> 5.0'
    pod 'GoogleMaps'
    pod 'GooglePlaces'
-   pod 'SwiftyJSON', '~> 4.0'
+   pod 'SwiftyJSON'
    pod 'GooglePlaces'
+   pod 'RxSwift',    '~> 4.0'
+   pod 'RxCocoa',    '~> 4.0'
+   pod 'SwiftyEventBus/Rx'
 end

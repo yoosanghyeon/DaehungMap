@@ -11,6 +11,8 @@ import Alamofire
 import SwiftyJSON
 import GoogleMaps
 import GooglePlaces
+import Foundation
+
 class SearchResultViewController: UIViewController {
     
     
@@ -19,6 +21,11 @@ class SearchResultViewController: UIViewController {
     // latitude :: x
     // lon :: y
 
+    @IBOutlet var timePrediction: UILabel!
+    @IBOutlet var distancePrediction: UILabel!
+    
+    
+    
     @IBAction func closeButtonAction(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -87,9 +94,37 @@ class SearchResultViewController: UIViewController {
                     let path = GMSMutablePath()
                     let features = data["features"]
                     for (index, object) in features {
-//                        let name = object["name"].stringValue
-//                        prin(name)
-//                        print("\(index)  ::: \(object["geometry"]["coordinates"])")
+
+                        if(Int(index) == 0){
+                            let distance = object["properties"]["totalDistance"].stringValue
+                            if(!distance.elementsEqual("")){
+                                let km = Meter(Double(distance)!)
+                                print(km)
+                                self.distancePrediction.text = "이동거리: " + String(km.km) + "km"
+                                
+                            }
+                            
+                            let totalTime = object["properties"]["totalTime"].stringValue
+                            if(!totalTime.elementsEqual("")){
+                                let (h,m,s) = self.secondsToHoursMinutesSeconds(seconds: Int(totalTime)!)
+                                var totalTimeText = "예상시간: "
+                                if(h != 0){
+                                    totalTimeText = totalTimeText + String(h) + "시 "
+                                }
+                                
+                                if(m > 0){
+                                    totalTimeText = totalTimeText + String(m) + "분 "
+                                }
+                                
+                                if(s > 0){
+                                    totalTimeText = totalTimeText + String(s) + "초"
+                                }
+                                self.timePrediction.text = totalTimeText
+                            }
+                            
+                        }
+                        
+                        
                         let type = object["geometry"]["type"].stringValue
 //                        lat = "37.494698";
 //                        lng = "126.858504";
@@ -103,7 +138,9 @@ class SearchResultViewController: UIViewController {
                         
                     }
                     let polyline = GMSPolyline(path: path)
-                    polyline.strokeWidth = 5
+                    let lightGreen = UIColor(red: (28/255.0), green: (208/255.0), blue: (126/255.0), alpha: 1.0)
+                    polyline.strokeColor = lightGreen
+                    polyline.strokeWidth = 3
                     polyline.map = self.mapView
                         
                         
@@ -125,4 +162,20 @@ class SearchResultViewController: UIViewController {
         
         return CLLocation(latitude: (mlat * 180 / Double.pi), longitude: (mlong * 180 / Double.pi))
     }
+    
+    func secondsToHoursMinutesSeconds (seconds : Int) -> (Int, Int, Int) {
+        return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
+    }
 }
+struct Meter {
+    var value: Double
+    
+    init(_ value: Double) {
+        self.value = value
+    }
+    
+    var mm: Double { return value * 1000.0 }
+    var km: Double { return value / 1000.0 }
+}
+
+

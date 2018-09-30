@@ -48,7 +48,7 @@ class BottomViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("bottom init data :: \(bottomViewData)")
+//        print("bottom init data :: \(bottomViewData)")
         
         let date = Date()
         let formatter = DateFormatter()

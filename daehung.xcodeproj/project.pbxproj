@@ -45,7 +45,8 @@
 		6D646AE4213A9C0A00A10152 /* map_present_background_update.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D646AC8213A9C0A00A10152 /* map_present_background_update.png */; };
 		6D646AE5213A9C0A00A10152 /* daum_th_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D646AC9213A9C0A00A10152 /* daum_th_line.png */; };
 		6D646AE6213A9C0A00A10152 /* map_pin_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D646ACA213A9C0A00A10152 /* map_pin_shadow.png */; };
-		6D646AE7213A9C0A00A10152 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D646ACB213A9C0A00A10152 /* DaumMap.framework */; };
+		6D6AC4D32160B22000641E70 /* PseudoHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6AC4D22160B22000641E70 /* PseudoHeaderTableViewCell.swift */; };
+		6D6AC4D52160B2F700641E70 /* CollapsibleTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6AC4D42160B2F700641E70 /* CollapsibleTableViewVC.swift */; };
 		6D6C4260214CD34E006B608D /* st.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6C425F214CD34E006B608D /* st.json */; };
 		6D9218BF213A927900A24F22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9218BE213A927900A24F22 /* AppDelegate.swift */; };
 		6D9218C4213A927900A24F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D9218C2213A927900A24F22 /* Main.storyboard */; };
@@ -59,7 +60,6 @@
 		6D921951213A934700A24F22 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D921950213A934700A24F22 /* libstdc++.6.tbd */; };
 		6D921953213A934D00A24F22 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D921952213A934D00A24F22 /* libxml2.tbd */; };
 		6D921955213A935300A24F22 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D921954213A935300A24F22 /* libsqlite3.tbd */; };
-		6D921975213A943600A24F22 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D921974213A942100A24F22 /* DaumMap.framework */; };
 		6D921978213A94AA00A24F22 /* DaumMapHeadrBring.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D921977213A94AA00A24F22 /* DaumMapHeadrBring.m */; };
 		ED64C5303746D7C9062715D7 /* Pods_daehung.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D223667DCFDA559E3D354DB /* Pods_daehung.framework */; };
 /* End PBXBuildFile section */
@@ -105,6 +105,8 @@
 		6D646AC9213A9C0A00A10152 /* daum_th_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daum_th_line.png; sourceTree = "<group>"; };
 		6D646ACA213A9C0A00A10152 /* map_pin_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin_shadow.png; sourceTree = "<group>"; };
 		6D646ACB213A9C0A00A10152 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
+		6D6AC4D22160B22000641E70 /* PseudoHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PseudoHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		6D6AC4D42160B2F700641E70 /* CollapsibleTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewVC.swift; sourceTree = "<group>"; };
 		6D6C425F214CD34E006B608D /* st.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = st.json; path = ../../daehung_node/st.json; sourceTree = "<group>"; };
 		6D6C5B55215B1EC600DB41FF /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D9218BB213A927900A24F22 /* daehung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = daehung.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,8 +168,6 @@
 				6D92194F213A933F00A24F22 /* QuartzCore.framework in Frameworks */,
 				6D92194D213A933900A24F22 /* CoreLocation.framework in Frameworks */,
 				6D92194B213A933300A24F22 /* SystemConfiguration.framework in Frameworks */,
-				6D646AE7213A9C0A00A10152 /* DaumMap.framework in Frameworks */,
-				6D921975213A943600A24F22 /* DaumMap.framework in Frameworks */,
 				6D921949213A932C00A24F22 /* OpenGLES.framework in Frameworks */,
 				ED64C5303746D7C9062715D7 /* Pods_daehung.framework in Frameworks */,
 			);
@@ -262,6 +262,8 @@
 				6D0F1A62215D0AD200A23976 /* SearchViewController.swift */,
 				6D0F1A64215E576800A23976 /* SearchResultViewController.swift */,
 				6D0F1A65215E576800A23976 /* SearchResultViewController.xib */,
+				6D6AC4D22160B22000641E70 /* PseudoHeaderTableViewCell.swift */,
+				6D6AC4D42160B2F700641E70 /* CollapsibleTableViewVC.swift */,
 			);
 			path = daehung;
 			sourceTree = "<group>";
@@ -485,7 +487,10 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyEventBus/SwiftyEventBus.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -493,7 +498,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyEventBus.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,7 +526,9 @@
 				6D188181215B2A4D006791E9 /* FindDistrictUtil.swift in Sources */,
 				6D0F1A66215E576800A23976 /* SearchResultViewController.swift in Sources */,
 				6D0F1A60215B979600A23976 /* LocationSearchViewController.swift in Sources */,
+				6D6AC4D32160B22000641E70 /* PseudoHeaderTableViewCell.swift in Sources */,
 				6D51F127214560C2009FB0E2 /* SideMenuTableViewController.swift in Sources */,
+				6D6AC4D52160B2F700641E70 /* CollapsibleTableViewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,7 +589,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -596,7 +606,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -640,7 +650,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -651,8 +661,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -668,21 +679,25 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HBL3QCLCPR;
+				ENABLE_BITCODE = YES;
+				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DaumMap.embeddedframework",
 				);
 				INFOPLIST_FILE = daehung/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = sanghyeon.org.daehung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "daehung/daehung-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -694,20 +709,24 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HBL3QCLCPR;
+				ENABLE_BITCODE = YES;
+				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DaumMap.embeddedframework",
 				);
 				INFOPLIST_FILE = daehung/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = sanghyeon.org.daehung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "daehung/daehung-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
